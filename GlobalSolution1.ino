@@ -54,11 +54,11 @@ void loop()
   //tmp = 10-26; humidity = 60-75;
   lcd_1.setCursor(3, 0);
   lcd_1.print("Strawberry");
-  if (celsius < 10 or humidity_val < 60){
+  if (celsius < 10 or humidity_val < 60 or light_val < 300){
   	status = "Bad"; //Bad
   	lcd_1.setCursor(2, 1);
     lcd_1.print("Status: " + status);
-  }else if(celsius <= 26 and humidity_val <= 75){
+  }else if(celsius <= 26 and humidity_val <= 75 and light_val <= 580){
   	status = "Good"; //Good
     lcd_1.setCursor(2, 1);
     lcd_1.print("Status: " + status);
@@ -75,11 +75,11 @@ void loop()
   //tmp = 18-30; humidity = 65-85;
   lcd_1.setCursor(5, 0);
   lcd_1.print("Tomato");
-  if (celsius < 18 or humidity_val < 65){
+  if (celsius < 18 or humidity_val < 65 or light_val < 300){
   	status = "Bad"; //Bad
   	lcd_1.setCursor(2, 1);
     lcd_1.print("Status: " + status);
-  }else if(celsius <= 30 and humidity_val <= 85){
+  }else if(celsius <= 30 and humidity_val <= 85 and light_val <= 580){
   	status = "Good"; //Good
     lcd_1.setCursor(2, 1);
     lcd_1.print("Status: " + status);
@@ -96,11 +96,11 @@ void loop()
   //tmp = 15-18; humidity = 50-70;
   lcd_1.setCursor(4, 0);
   lcd_1.print("Lettuce");
-  if (celsius < 15 or humidity_val < 50){
+  if (celsius < 15 or humidity_val < 50 or light_val < 300){
   	status = "Bad"; //Bad
   	lcd_1.setCursor(2, 1);
     lcd_1.print("Status: " + status);
-  }else if(celsius <= 18 and humidity_val <= 70){
+  }else if(celsius <= 18 and humidity_val <= 70 and light_val <= 580){
   	status = "Good"; //Good
     lcd_1.setCursor(2, 1);
     lcd_1.print("Status: " + status);
